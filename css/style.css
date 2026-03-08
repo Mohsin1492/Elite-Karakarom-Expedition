@@ -1,26 +1,46 @@
 /* ============================== GLOBAL STYLES============================== */
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Poppins',sans-serif;color:#FFF;line-height:1.6;background:#1e1e1e;}
+
 /* ============================== Buttons ============================== */
-.btn_a{background-color:#F59900;color:#FFF;border:1.5px solid #F59900;padding:12px 25px;font-size:1rem;border-radius:8px;cursor:pointer;transition:0.3s;}
-.btn_a:hover{background:none;}
-.btn_b{background:none;color:#fff;border:none;border:1.5px solid #F59900;padding:12px 25px;font-size:1rem;border-radius:5px;cursor:pointer;transition:0.3s;}
-.btn_b:hover{background-color:#F59900;}
+.btn{display:inline-block;padding:12px 26px;border-radius:30px;border:2px solid #ffb703;color:#ffb703;text-decoration:none;font-weight:600;transition:all 0.3s ease;}
+.btn:hover{background:#ffb703;color:#000;}
+.btn_a{background-color:#F59900;color:#FFF;border:1.5px solid #F59900;padding:12px 25px;font-size:1rem;border-radius:8px;cursor:pointer;transition:0.3s; text-decoration: none;}
+.btn_a:hover{background:none; color: #F59900;}
+.btn_b{background:none;color:#F59900;border:none;border:1.5px solid #F59900;padding:12px 25px;font-size:1rem;border-radius:5px;cursor:pointer;transition:0.3s; text-decoration: none;}
+.btn_b:hover{background-color:#F59900; color: #fff;}
+.tag-btn{padding:8px 14px;background:#ffb703;color:#000;text-decoration:none;border-radius:10px;font-size:0.75rem;font-weight:600;white-space:nowrap;}
+.view-btn{display:inline-block;padding:14px 26px;border:2px solid #ffb703;border-radius:14px;color:#fff;text-decoration:none;font-weight:600;transition:all 0.3s ease;}
+.view-btn:hover{background:#ffb703;color:#000;}
+.cta-btn{padding:14px 32px;background:#ffb703;color:#000;border-radius:14px;font-weight:700;text-decoration:none;transition:0.3s;}
+.cta-btn:hover{background:#ffc933;}
+.btn_primary{background:#f59900;color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;border:2px solid #f59900;}
+.btn_primary:hover{background:transparent;}
+.btn_outline{border:2px solid #f59900;padding:12px 26px;border-radius:8px;color:#fff;text-decoration:none;}
+
+
+/* ============================== Containers ============================== */
+.container{width:90%;max-width:1200px;margin:auto;}
+.header-container{display:flex;align-items:center;justify-content:space-between;padding:15px 0;}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center;}
+
+
+
+
 /* ============================== FEATURES SECTION============================== */
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:80px auto;text-align:center;}
 .feature{background:#fff;padding:30px 20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.05);transition:transform 0.3s;}
 .feature:hover{transform:translateY(-5px);}
 .feature h3{color:#007bff;margin-bottom:10px;}
+
 /* ============================== FOOTER============================== */
 .footer{text-align:center;background:#222;color:#fff;padding:20px 0;font-size:0.9rem;}
+.fot_ser li a{cursor: pointer;}
+
 /* ============================== RESPONSIVE DESIGN============================== */
-@media (max-width:992px){.features{grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:768px){.features{grid-template-columns:1fr;}
-.menu-toggle{display:flex;}
-.nav-links{position:absolute;top:70px;right:0;background:white;width:200px;flex-direction:column;align-items:center;gap:15px;padding:20px 0;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,0.1);display:none;}
-.nav-links.active{display:flex;}
-}
+
 .about{margin:80px auto;}
 p.herotop{font-size:30px;}
 p.heromiddle{font-size:50px;}
@@ -45,7 +65,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Section */
 .adventure-section{padding:80px 20px;}
 /* Grid */
-.cards-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+
 /* Card */
 .adventure-card{border-radius:22px;padding:22px;color:#fff;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.12);transition:all 0.4s ease;}
 .adventure-card:hover{transform:translateY(-8px);border-color:#ffb703;}
@@ -54,13 +74,9 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Text */
 .adventure-card h3{font-size:1.4rem;margin-bottom:12px;}
 .adventure-card p{font-size:0.95rem;line-height:1.6;color:#d0d0d0;margin-bottom:25px;}
-/* Button */
-.btn{display:inline-block;padding:12px 26px;border-radius:30px;border:2px solid #ffb703;color:#ffb703;text-decoration:none;font-weight:600;transition:all 0.3s ease;}
-.btn:hover{background:#ffb703;color:#000;}
+
 /* Mobile Optimization */
-@media (max-width:480px){.adventure-card img{height:180px;}
-.adventure-card h3{font-size:1.2rem;}
-}
+
 .ad_button{margin-top:40px;text-align:center;}
 .popu_section{padding:30px 0px;}
 /* Section */
@@ -80,11 +96,6 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Tags */
 .tags{display:flex;flex-wrap:wrap;gap:8px;}
 .tags span{font-size:0.75rem;padding:6px 12px;border-radius:20px;background:rgba(255,183,3,0.15);border:1px solid #ffb703;color:#ffb703;}
-/* Mobile */
-@media (max-width:480px){.overlay h3{font-size:1.2rem;}
-.overlay p{font-size:0.9rem;}
-.destination-card{height:235px;}
-}
 .testi_section{padding:30px 0px;}
 .testimonials-section{padding:80px 20px;}
 /* Grid */
@@ -103,24 +114,19 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Author */
 .author strong{display:block;font-size:0.95rem;}
 .author span{font-size:0.85rem;color:#bbb;}
-/* Tag Button */
-.tag-btn{padding:8px 14px;background:#ffb703;color:#000;text-decoration:none;border-radius:10px;font-size:0.75rem;font-weight:600;white-space:nowrap;}
+
 /* View All */
 .view-all{margin-top:50px;text-align:center;}
-.view-btn{display:inline-block;padding:14px 26px;border:2px solid #ffb703;border-radius:14px;color:#fff;text-decoration:none;font-weight:600;transition:all 0.3s ease;}
-.view-btn:hover{background:#ffb703;color:#000;}
-/* Mobile */
-@media (max-width:480px){.quote{font-size:0.9rem;}
-.testimonials-grid{grid-template-columns:1fr;}
-}
+
+
 /* ================= CTA SECTION ================= */
-.cta-section{padding:90px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;}
+.cta-section{padding:90px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cta.jpeg") center/cover no-repeat;}
 .cta-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
 .badge{display:inline-block;margin-bottom:18px;font-size:0.85rem;letter-spacing:2px;color:#ffb703;}
 .cta-box h2{font-size:2.4rem;margin-bottom:14px;}
 .cta-box p{max-width:700px;margin:0 auto 30px;font-size:1rem;line-height:1.7;color:#ddd;}
-.cta-btn{padding:14px 32px;background:#ffb703;color:#000;border-radius:14px;font-weight:700;text-decoration:none;transition:0.3s;}
-.cta-btn:hover{background:#ffc933;}
+
+
 /* ================= CONTACT SECTION ================= */
 .contact-section{padding:90px 20px;}
 .contact-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;}
@@ -139,15 +145,15 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .contact-form textarea{resize:none;height:120px;}
 .contact-form button{width:100%;padding:14px;background:#ffb703;color:#000;border:none;border-radius:12px;font-weight:700;cursor:pointer;}
 .contact-form button:hover{background:#ffc933;}
+
 /* ================= RESPONSIVE ================= */
-@media (max-width:900px){.contact-grid{grid-template-columns:1fr;}
-.cta-box h2{font-size:2rem;}
-}
+
+
 /* ================= FOOTER ================= */
-.site-footer{background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;}
-.footer-overlay{padding:70px 20px 0;}
-/* Container */
-.footer-container{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:40px;}
+.site-footer{background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),url("../assets/images/footer.jpeg") center/cover no-repeat;}
+.footer-overlay{padding:70px 0px 0px 0px;}
+
+
 /* Brand */
 .brand .logo{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
 .brand .icon{font-size:2rem;color:#ffb703;}
@@ -170,12 +176,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .bottom-links{display:flex;gap:25px;}
 .bottom-links a{color:#ccc;text-decoration:none;}
 .bottom-links a:hover{color:#ffb703;}
-/* ================= RESPONSIVE ================= */
-@media (max-width:900px){.footer-container{grid-template-columns:1fr 1fr;}
-.footer-bottom{flex-direction:column;gap:10px;text-align:center;}
-}
-@media (max-width:480px){.footer-container{grid-template-columns:1fr;}
-}
+
 /* . */
 /* . */
 /* . */
@@ -183,20 +184,16 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* . */
 /* . */
 /* . */
-/* ===== CONTAINER ===== */
-.container{width:90%;max-width:1200px;margin:auto;}
+
 /* ===== HEADER ===== */
 .header{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.45);backdrop-filter:blur(10px);z-index:1000;}
-.header-container{display:flex;align-items:center;justify-content:space-between;padding:15px 0;}
+.header2{width:100%;}
 .logo img{height:100px;}
 /* NAV */
 .nav-links{display:flex;gap:25px;list-style:none;padding:10px 30px;border:1px solid #fff;border-radius:30px;}
 .nav-links a{color:#fff;font-weight:500;text-decoration:none;}
 .nav-links a.active{color:#f59900;}
-/* BUTTONS */
-.btn_primary{background:#f59900;color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;border:2px solid #f59900;}
-.btn_primary:hover{background:transparent;}
-.btn_outline{border:2px solid #f59900;padding:12px 26px;border-radius:8px;color:#fff;text-decoration:none;}
+
 /* MOBILE MENU */
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;}
 .menu-toggle span{width:25px;height:3px;background:#fff;}
@@ -214,15 +211,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .hero-right{display:flex;justify-content:center;}
 .customers strong{font-size:1.6rem;color:#f59900;}
 .stars{color:#f59900;font-size:1.2rem;}
-/* ===== RESPONSIVE ===== */
-@media (max-width:992px){.nav-links{display:none;flex-direction:column;background:#000;position:absolute;top:70px;right:5%;padding:20px;}
-.navbar.active .nav-links{display:flex;}
-.menu-toggle{display:flex;}
-.hero-title{font-size:2.3rem;}
-}
-@media (max-width:576px){.hero-title{font-size:2rem;}
-.hero-buttons{flex-direction:column;}
-}
+
 /* ===== CUSTOMER REVIEW ===== */
 .review-box{display:flex;flex-direction:column;align-items:center;gap:12px;}
 .avatars{display:flex;align-items:center;}
@@ -234,14 +223,6 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .stars{color:#f59900;font-size:1.1rem;}
 .stars small{color:#fff;font-size:0.85rem;margin-left:8px;}
 /* RESPONSIVE */
-@media (max-width:768px){.review-box{margin-top:30px;}
-.avatars img,.avatar-plus{width:40px;height:40px;}
-.review-text h3{font-size:1.3rem;}
-}
-@media (max-width:768px){.hero-content{flex-direction:column;align-items:center;text-align:center;}
-.hero-right{width:100%;justify-content:center;margin-top:30px;}
-.avatars{justify-content:center;}
-}
 .feat_img img{border-radius:0px 90px 0px 90px;border:3px solid #fff;}
 .feat_img_2 img{border-radius:90px 0px 90px 0px;border:3px solid #fff;}
 /* . */
@@ -256,9 +237,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .experience-card{color:#fff;}
 /* Image */
 .image-wrapper{overflow:hidden;margin-bottom:16px;}
-.image-wrapper-2{overflow:hidden;margin-bottom:16px;}
-.image-wrapper img{width:100%;display:block;border-radius:0px 90px 0px 90px;border:3px solid #fff;}
-.image-wrapper-2 img{width:100%;display:block;border-radius:90px 0px 90px 0px;border:3px solid #fff;}
+.image-wrapper img{width:100%;height: 300px; display:block;border-radius:0px 90px 0px 90px;border:3px solid #fff;}
 /* Content */
 .content{display:flex;justify-content:space-between;align-items:center;}
 /* Text */
@@ -272,13 +251,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .progress .bg{stroke:#333;}
 .progress .fg{stroke:#f4a700;stroke-dasharray:251;stroke-dashoffset:13;}
 .progress span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:bold;}
-/* 📱 Tablet */
-@media (max-width:992px){.experience-row{grid-template-columns:repeat(2,1fr);}
-}
-/* 📱 Mobile */
-@media (max-width:600px){.experience-row{grid-template-columns:1fr;justify-items:center;}
-.experience-card{width:100%;max-width:360px;}
-}
+
 /* . */
 /* . */
 /* . */
@@ -287,7 +260,6 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* . */
 /* . */
 .about-section{padding:80px 5%;color:#fff;}
-.about-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center;}
 /* Left Content */
 .about-tagline{font-size:12px;letter-spacing:3px;color:#bbb;margin-bottom:15px;}
 .about-title{font-size:42px;font-weight:700;margin-bottom:25px;}
@@ -297,8 +269,107 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Image Styling */
 .about-image{border-radius:20px;border:3px solid #fff;padding:8px;}
 .about-image img{width:100%;height:auto;border-radius:15px;display:block;}
-/* Responsive */
-@media (max-width:992px){.about-container{grid-template-columns:1fr;text-align:center;}
+
+
+.cul-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cul_banner.jpeg") center/cover no-repeat;}
+.tre-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/trek.jpg") center/cover no-repeat;}
+.tre-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
+.tre-box h2{font-size:4rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== HERO SECTION ========== */
+.trek-hero{background:linear-gradient( rgba(0,0,0,0.45),rgba(0,0,0,0.45) ),url("../assets/images/trek.jpg") top/cover no-repeat;color:#ffffff;text-align:center;padding:140px 0;}
+.trek-hero p{max-width:700px;margin:auto;font-size:1.1rem;color:#e5e7eb;}
+/* ========== WHY TREK ========== */
+.why-trek p{max-width:800px;}
+/* ========== TREK ROUTES ========== */
+/* .trek-routes{background-color:#f8fafc;} */
+.trek-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px;}
+.trek-card{padding:28px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.05);background-color: white; transition:transform 0.3s ease,box-shadow 0.3s ease;}
+.trek-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.08);}
+/* ========== DIFFICULTY LEVELS ========== */
+.levels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:30px;}
+.levels-grid div{padding:24px;border-left:4px solid #fbbf24;background-color:#f9fafb;border-radius:12px;}
+/* ========== WHAT'S INCLUDED ========== */
+.include-list{margin-top:30px;list-style:none;}
+.include-list li{padding-left:28px;margin-bottom:14px;position:relative;font-size:1rem;}
+.include-list li::before{content:"✓";position:absolute;left:0;color:#fbbf24;font-weight:bold;}
+/* ========== CTA ========== */
+.trek-cta{color:#ffffff;text-align:center;}
+.trek-cta p{color:#e5e7eb;max-width:700px;margin:auto;}
+
+
+
+
+
+/* ========== RESPONSIVE CODE========== */
+
+/* ========== TABLETS & SMALL LAPTOPS ========== */
+@media (max-width: 992px){
+ .features{grid-template-columns:repeat(2,1fr);}
+.hero-title{font-size:2.3rem;}
+.experience-row{grid-template-columns:repeat(2,1fr);}
+.about-grid{grid-template-columns:1fr;text-align:center;}
 .about-text{margin:auto;}
 .about-title{font-size:34px;}
+.menu-toggle{display:flex;}
+.nav-links{display:none;flex-direction:column;background:#000;position:absolute;top:70px;right:5%;padding:20px;}
+.navbar.active .nav-links{display:flex;}
+.contact-grid{grid-template-columns:1fr;}
+.footer-grid{grid-template-columns:1fr 1fr;}
+.footer-bottom{flex-direction:column;gap:10px;text-align:center;}
+.cta-box h2{font-size:2rem;}
+}
+
+/* ========== TABLETS & LARGE PHONES ========== */
+@media (max-width: 768px){
+ h1{font-size:2.3rem !important;}
+h2{font-size:1.8rem !important;}
+section{padding:60px 0;}
+.hero{padding-top:160px;}
+.trek-hero{padding:110px 0;}
+.hero-content{flex-direction:column;align-items:center;text-align:center;}
+.hero-right{width:100%;justify-content:center;margin-top:30px;}
+.avatars{justify-content:center;}
+.review-box{margin-top:30px;}
+.avatars img,.avatar-plus{width:40px;height:40px;}
+.review-text h3{font-size:1.3rem;}
+.features{grid-template-columns:1fr;}
+.experience-row{grid-template-columns:1fr;justify-items:center;}
+.experience-card{width:100%;max-width:360px;}
+.ad_text h3{font-size:35px;}
+.hero-buttons{flex-direction:column;}
+.footer-grid{grid-template-columns:1fr;}
+.testimonials-grid{grid-template-columns:1fr;}
+}
+
+/* ========== MOBILE PHONES ========== */
+@media (max-width: 480px){
+ .hero-title{font-size:2rem;}
+.adventure-card img{height:180px;}
+.adventure-card h3{font-size:1.2rem;}
+.overlay h3{font-size:1.2rem;}
+.overlay p{font-size:0.9rem;}
+.destination-card{height:235px;}
+.quote{font-size:0.9rem;}
 }

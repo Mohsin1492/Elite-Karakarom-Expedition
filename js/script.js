@@ -8,8 +8,15 @@ menuToggle.addEventListener('click', () => {
 });
 
 const toggle = document.getElementById("menu-toggle");
-  const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
-  toggle.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-  });
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+
+function openWhatsApp() {
+    let phoneNumber = "923441186392";
+    let url = "https://wa.me/" + phoneNumber;
+    window.open(url, "_blank");
+}

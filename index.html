@@ -34,7 +34,7 @@
         </ul>
       </nav>
 
-      <a href="#" class="btn_a">Book Now</a>
+      <a href="#" class="btn_a" onclick="openWhatsApp()">Book Now</a>
 
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
@@ -59,13 +59,13 @@
         </h1>
 
         <p class="hero-desc">
-          Discover breathtaking landscapes, unforgettable journeys, and
+          Discover breathtaking landscapes, unforgettable journeys and
           world-class travel experiences across Northern Pakistan.
         </p>
 
         <div class="hero-buttons">
-          <a href="#" class="btn_a">Book Your Trip</a>
-          <a href="#" class="btn_b">Learn More</a>
+          <a href="#" class="btn_a" onclick="openWhatsApp()">Book Your Trip</a>
+          <a href="" class="btn_b">Learn More</a>
         </div>
       </div>
 
@@ -141,7 +141,7 @@
           <div class="content">
             <div class="text">
               <h3>Affordable Adventures</h3>
-              <p>Flexible packages, transparent pricing, and premium experiences for every explorer.</p>
+              <p>Flexible packages, transparent pricing and premium experiences for every explorer.</p>
             </div>
 
             <div class="progress">
@@ -170,14 +170,14 @@
 
         <p class="about-text">
           Based in the heart of Skardu, we are a team of passionate adventurers,
-          experienced mountaineers, and local guides who have dedicated our lives
+          experienced mountaineers and local guides who have dedicated our lives
           to sharing the magnificence of northern Pakistan with the world.
         </p>
 
         <p class="about-text">
           Our deep-rooted connection to this land, combined with international
           safety standards and premium hospitality, ensures that your journey
-          with us is not just a trip—it’s a transformative experience.
+          with us is not just a trip, it’s a transformative experience.
         </p>
       </div>
 
@@ -200,29 +200,26 @@
       <div class="adventure-section">
         <div class="cards-grid">
 
-          <!-- Card 1 -->
           <div class="adventure-card">
             <img src="./assets/images/ad_1.png" alt="Trekking Adventures">
             <h3>Trekking Adventures</h3>
             <p>
-              Explore hidden trails, alpine lakes, and ancient valleys.
+              Explore hidden trails, alpine lakes and ancient valleys.
               Our treks range from gentle walks to challenging multi-day adventures.
             </p>
-            <a href="#" class="btn">Book Your Trip</a>
+            <a href="#" class="btn" onclick="openWhatsApp()">Book Your Trip</a>
           </div>
 
-          <!-- Card 2 -->
           <div class="adventure-card">
             <img src="./assets/images/ad_2.png" alt="Mountain Expeditions">
             <h3>Mountain Expeditions</h3>
             <p>
-              Expert-guided treks to K2, Gasherbrum, and other majestic peaks
+              Expert-guided treks to K2, Gasherbrum and other majestic peaks
               with complete safety equipment.
             </p>
-            <a href="#" class="btn">Book Your Trip</a>
+            <a href="#" class="btn" onclick="openWhatsApp()">Book Your Trip</a>
           </div>
 
-          <!-- Card 3 -->
           <div class="adventure-card">
             <img src="./assets/images/ad_3.png" alt="Expert Guides">
             <h3>Expert Guides</h3>
@@ -230,7 +227,7 @@
               Certified mountain guides with decades of experience
               and intimate knowledge of local terrain.
             </p>
-            <a href="#" class="btn">Book Your Trip</a>
+            <a href="#" class="btn" onclick="openWhatsApp()">Book Your Trip</a>
           </div>
 
         </div>
@@ -298,7 +295,7 @@
             <img src="./assets/images/pop_4.jpg" alt="Broad Peak">
             <div class="overlay">
               <h3>Broad Peak</h3>
-              <p>Face the mighty twin of K2 — raw, remote, and breathtaking.</p>
+              <p>Face the mighty twin of K2 — raw, remote and breathtaking.</p>
               <div class="tags">
                 <span>Adventure</span>
                 <span>Mountaineering</span>
@@ -326,7 +323,7 @@
             <img src="./assets/images/pop_6.webp" alt="Deosai">
             <div class="overlay">
               <h3>Deosai Plateau</h3>
-              <p>The Land of Giants — wild, free, and untouched by time.</p>
+              <p>The Land of Giants — wild, free and untouched by time.</p>
               <div class="tags">
                 <span>Camping</span>
                 <span>Wildlife</span>
@@ -352,7 +349,7 @@
           Our team of experts is ready to customize the perfect Skardu experience
           for you. Contact us today to start planning your dream expedition.
         </p>
-        <a href="#contact" class="btn_a">PLAN YOUR TRIP NOW</a>
+        <a href="#contact" class="btn_a" onclick="openWhatsApp()">PLAN YOUR TRIP NOW</a>
       </div>
     </div>
   </div>
@@ -398,7 +395,7 @@
         <div class="contact-form">
           <h3>Send Us a Message</h3>
 
-          <form>
+          <form action="./php/send.php" method="POST">
             <label>Your Name *</label>
             <input type="text" placeholder="John Doe" required>
 

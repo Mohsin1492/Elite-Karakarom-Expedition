@@ -14,7 +14,7 @@ body{font-family:'Poppins',sans-serif;color:#FFF;line-height:1.6;background:#1e1
 .view-btn:hover{background:#ffb703;color:#000;}
 .cta-btn{padding:14px 32px;background:#ffb703;color:#000;border-radius:14px;font-weight:700;text-decoration:none;transition:0.3s;}
 .cta-btn:hover{background:#ffc933;}
-.btn_primary{background:#f59900;color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;border:2px solid #f59900;}
+.btn_primary{background:#f59900;color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;border:2px solid #f59900;cursor: pointer;}
 .btn_primary:hover{background:transparent;}
 .btn_outline{border:2px solid #f59900;padding:12px 26px;border-radius:8px;color:#fff;text-decoration:none;}
 
@@ -273,6 +273,8 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 .cul-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cul_banner.jpeg") center/cover no-repeat;}
 .tre-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/trek.jpg") center/cover no-repeat;}
+.abt_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/abt_banner.jpg") center/cover no-repeat;}
+.cntct_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cntct_banner.jpg") center/cover no-repeat;}
 .tre-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
 .tre-box h2{font-size:4rem;}
 
@@ -372,4 +374,68 @@ section{padding:60px 0;}
 .overlay p{font-size:0.9rem;}
 .destination-card{height:235px;}
 .quote{font-size:0.9rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= TREK HERO SECTION============================= */
+.trek-hero-2{width:100%;height:50vh;position:relative;overflow:hidden;}
+.trek-hero-overlay{width:100%;height:100%;position:relative;}
+.trek-hero-overlay img{width:100%;height:100%;object-fit:cover;object-position: center top;}
+.trek-hero-overlay::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.trek-hero-overlay-2{width:100%;height:100%;position:relative;}
+.trek-hero-overlay-2 img{width:100%;height:100%;object-fit: cover;}
+.trek-hero-overlay-2::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+/* Text on image */
+.trek-hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;z-index:2;}
+.trek-hero-text h1{font-size:3rem;font-weight:600;letter-spacing:1px;}
+/* ============================= TREK DETAILS============================= */
+.trek-details{padding:60px 20px;max-width:1000px;margin:auto;}
+.trek-details h2{font-size:2rem;margin-bottom:20px;text-align:center;}
+.trek-details p{font-size:1rem;line-height:1.8;color:#FFF;margin-bottom:20px;text-align:justify;}
+/* Button */
+.trek-btn{text-align:center;margin-top:30px;}
+/* ============================= RESPONSIVE============================= */
+@media (max-width:768px){.trek-hero-2{height:50vh;}
+.trek-hero-text h1{font-size:2rem;}
+.trek-details{padding:40px 15px;}
+.trek-details h2{font-size:1.6rem;}
+.trek-details p{font-size:0.95rem;}
+}
+@media (max-width:480px){.trek-hero-2{height:45vh;}
+.trek-hero-text h1{font-size:1.5rem;}
+}
+.trek-details h3{margin-top:30px;margin-bottom:10px;font-size:1.4rem;color: #f59900;}
+.trek-list{padding-left:20px;margin-bottom:20px;}
+.trek-list li{margin-bottom:10px;line-height:1.6;}
+
+
+
+
+/* TABLE CONTAINER */
+.table-container{width:100%;overflow-x:auto;margin:20px 0;}
+/* TABLE STYLE */
+.departure-table{width:100%;border-collapse:collapse;min-width:500px;overflow:hidden;border: 1px solid #fff;}
+/* HEADER */
+.departure-table thead{background:#111;color:#fff;}
+.departure-table th,.departure-table td{padding:12px 15px;text-align:left;border: 1px solid #fff;}
+/* ROWS */
+/* .departure-table tbody tr{border-bottom:1px solid #eee;} */
+/* .departure-table tbody tr:hover{background:#f9f9f9;} */
+/* STATUS BADGE */
+.status{background:#28a745;color:#fff;padding:5px 10px;border-radius:20px;font-size:0.85rem;}
+/* MOBILE VIEW */
+@media (max-width:600px){.departure-table{min-width:100%;}
+.departure-table th,.departure-table td{padding:10px;font-size:0.9rem;}
 }

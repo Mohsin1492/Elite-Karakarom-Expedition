@@ -118,7 +118,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 
 /* ================= CTA SECTION ================= */
-.cta-section{padding:90px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cta.jpeg") center/cover no-repeat;}
+.cta-section{padding:90px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cta.webp") center/cover no-repeat;}
 .cta-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
 .badge{display:inline-block;margin-bottom:18px;font-size:0.85rem;letter-spacing:2px;color:#ffb703;}
 .cta-box h2{font-size:2.4rem;margin-bottom:14px;}
@@ -148,7 +148,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 
 /* ================= FOOTER ================= */
-.site-footer{background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),url("../assets/images/footer.jpeg") center/cover no-repeat;}
+.site-footer{background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),url("../assets/images/footer.webp") center/cover no-repeat;}
 .footer-overlay{padding:70px 0px 0px 0px;}
 
 
@@ -196,7 +196,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;}
 .menu-toggle span{width:25px;height:3px;background:#fff;}
 /* ===== HERO ===== */
-.hero{height:100vh;background:url("../assets/images/hero.jpg") center/cover no-repeat;position:relative;display:flex;align-items:center;padding-top:90px;}
+.hero{height:100vh;background:url("../assets/images/hero.webp") center/cover no-repeat;position:relative;display:flex;align-items:center;padding-top:90px;}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,0.6);}
 .hero-content{position:relative;text-align: center;}
 /* .hero-left{max-width:600px;} */
@@ -255,11 +255,13 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .about-image{border-radius:20px;border:3px solid #fff;padding:8px;}
 .about-image img{width:100%;height:auto;border-radius:15px;display:block;}
 
+.cul-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cul_banner.webp") center/cover no-repeat;}
+.exp-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/expedition_banner.webp") center/cover no-repeat;}
+.loc-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/local_tour.webp") center/cover no-repeat;}
 
-.cul-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cul_banner.jpeg") center/cover no-repeat;}
-.tre-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/trek.jpg") center/cover no-repeat;}
-.abt_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/abt_banner.jpg") center/cover no-repeat;}
-.cntct_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cntct_banner.jpg") center/cover no-repeat;}
+.tre-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/trek.webp") center/cover no-repeat;}
+.abt_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/abt_banner.webp") center/cover no-repeat;}
+.cntct_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cntct_banner.webp") center/cover no-repeat;}
 .tre-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
 .tre-box h2{font-size:4rem;}
 
@@ -285,7 +287,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 
 /* ========== HERO SECTION ========== */
-.trek-hero{background:linear-gradient( rgba(0,0,0,0.45),rgba(0,0,0,0.45) ),url("../assets/images/trek.jpg") top/cover no-repeat;color:#ffffff;text-align:center;padding:140px 0;}
+.trek-hero{background:linear-gradient( rgba(0,0,0,0.45),rgba(0,0,0,0.45) ),url("../assets/images/trek.webp") top/cover no-repeat;color:#ffffff;text-align:center;padding:140px 0;}
 .trek-hero p{max-width:700px;margin:auto;font-size:1.1rem;color:#e5e7eb;}
 /* ========== WHY TREK ========== */
 .why-trek p{max-width:800px;}
@@ -330,7 +332,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 /* ========== TABLETS & LARGE PHONES ========== */
 @media (max-width: 768px){
- h1{font-size:2.3rem !important;}
+h1{font-size:2.3rem !important;}
 h2{font-size:1.8rem !important;}
 section{padding:60px 0;}
 .hero{padding-top:160px;}
@@ -373,7 +375,7 @@ section{padding:60px 0;}
 /* ============================= TREK HERO SECTION============================= */
 .trek-hero-2{width:100%;height:50vh;position:relative;overflow:hidden;z-index:1;}
 .trek-hero-overlay{width:100%;height:100%;position:relative;z-index:1;}
-.trek-hero-overlay img{width:100%;height:100%;object-fit:cover;object-position:center 10%;}
+.trek-hero-overlay img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
 .trek-hero-overlay::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
 .trek-hero-overlay-2{width:100%;height:100%;position:relative;}
 .trek-hero-overlay-2 img{width:100%;height:100%;object-fit: cover;}
@@ -389,18 +391,17 @@ section{padding:60px 0;}
 .trek-btn{text-align:center;margin-top:30px;}
 /* ============================= RESPONSIVE============================= */
 @media (max-width:768px){.trek-hero-2{height:50vh;}
-.trek-hero-text h1{font-size:2rem;}
+.trek-hero-text h1{font-size:28px !important;}
 .trek-details{padding:40px 15px;}
 .trek-details h2{font-size:1.6rem;}
 .trek-details p{font-size:0.95rem;}
 }
 @media (max-width:480px){.trek-hero-2{height:45vh;}
-.trek-hero-text h1{font-size:1.5rem;}
+.trek-hero-text h1{font-size:22px !important;}
 }
 .trek-details h3{margin-top:30px;margin-bottom:10px;font-size:1.4rem;color: #f59900;}
 .trek-list{padding-left:20px;margin-bottom:20px;}
 .trek-list li{margin-bottom:10px;line-height:1.6;}
-
 
 
 

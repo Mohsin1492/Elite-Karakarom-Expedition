@@ -6,10 +6,9 @@
   <meta name="description" content="Elite Karakarom Expedition Website" />
   <title>Elite Karakarom Expedition</title>
 
-  <!-- Links -->
   <link rel="icon" href="../assets/images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -18,7 +17,7 @@
     <header class="header2">
         <div class="container header-container">
 
-            <a href="#" class="logo">
+            <a href="../index.html" class="logo">
             <img loading="lazy" src="../assets/images/logo.png" alt="Elite Karakarom Expedition">
             </a>
 
@@ -34,7 +33,7 @@
             </ul>
             </nav>
 
-            <a href="#" class="btn_primary">Book Now</a>
+            <a class="btn_primary" onclick="openWhatsApp()">Book Now</a>
 
             <div class="menu-toggle" id="menu-toggle">
             <span></span>
@@ -45,68 +44,166 @@
         </div>
     </header>
 
-    <div class="contact-section" id="contact">
-        <div class="container contact-grid">
+    <!-- TREK HERO SECTION -->
+    <section class="trek-hero-2">
+        <div class="trek-hero-overlay">
+            <img loading="lazy" src="../assets/images/local_6.webp" alt="GB_03">
 
-            <!-- Left Content -->
-            <div class="contact-info">
-            <span class="small-title">GET IN TOUCH</span>
-            <h2>Contact Us</h2>
+            <div class="trek-hero-text">
+                <h1>Hunza, Fairy Meadows & Skardu Tour</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="trek-details">
+        <div class="container">
+
+            <h2>The Ultimate Northern Pakistan Experience</h2>
+
             <p>
-                Ready to embark on your adventure? Reach out to us and let's start
-                planning your unforgettable journey through northern Pakistan.
+            This 7-day tour combines the cultural beauty of Hunza, the magical
+            landscapes of Fairy Meadows, and the breathtaking valleys of Skardu.
+            It is a perfect journey for travelers who want a mix of adventure,
+            nature, and iconic mountain views.
             </p>
 
-            <ul class="info-list">
-                <li>
-                <span class="icon">📍</span>
-                <div>
-                    <strong>Our Office</strong>
-                    <p>Main Bazaar, Skardu<br>Gilgit-Baltistan, Pakistan</p>
-                </div>
-                </li>
+            <!-- STATUS TABLE -->
+            <h3>Tour Availability 2026</h3>
 
-                <li>
-                <span class="icon">📞</span>
-                <div>
-                    <strong>Phone</strong>
-                    <p>+92 300 1234567<br><small>Available 24/7</small></p>
-                </div>
-                </li>
-
-                <li>
-                <span class="icon">✉️</span>
-                <div>
-                    <strong>Email</strong>
-                    <p>info@skarduadventures.com<br>bookings@skarduadventures.com</p>
-                </div>
-                </li>
-            </ul>
+            <div class="table-container">
+            <table class="departure-table">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Tour</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Summer 2026</td>
+                    <td>Hunza, Fairy Meadows & Skardu</td>
+                    <td><span class="status">Open</span></td>
+                </tr>
+                </tbody>
+            </table>
             </div>
 
-            <!-- Right Form -->
-            <div class="contact-form">
-            <h3>Send Us a Message</h3>
+            <!-- SNAPSHOT -->
+            <h3>Tour Snapshot</h3>
 
-            <form>
-                <label>Your Name *</label>
-                <input type="text" placeholder="John Doe" required>
+            <ul class="trek-list">
+            <li><strong>Duration:</strong> 7 Days</li>
+            <li><strong>Mode of Transport:</strong> Air Travel (Flight)</li>
+            <li><strong>Destinations:</strong> Hunza, Fairy Meadows, Skardu</li>
+            <li><strong>Difficulty:</strong> Easy to Moderate (with light hiking)</li>
+            </ul>
 
-                <label>Email Address *</label>
-                <input type="email" placeholder="john@example.com" required>
+            <!-- HIGHLIGHTS -->
+            <h3>Tour Highlights</h3>
 
-                <label>Phone Number</label>
-                <input type="tel" placeholder="+1 (555) 000-0000">
+            <ul class="trek-list">
+            <li>Explore Baltit and Altit Forts in Hunza</li>
+            <li>Sunset at Duikar (Eagle’s Nest)</li>
+            <li>Visit Attabad Lake and Passu Cones</li>
+            <li>Experience Khunjerab Pass – highest road border</li>
+            <li>Adventure trip to Fairy Meadows with jeep ride & hike</li>
+            <li>Views of Nanga Parbat from Fairy Meadows</li>
+            <li>Explore Deosai Plains, Shangrila & Shigar Fort</li>
+            </ul>
 
-                <label>Your Message *</label>
-                <textarea placeholder="Tell us about your dream adventure..." required></textarea>
+            <!-- ABOUT -->
+            <h3>About the Tour</h3>
 
-                <button type="submit">SEND MESSAGE</button>
-            </form>
+            <p>
+            This tour is designed for travelers who want to experience the best of
+            Northern Pakistan in a short time. It blends cultural heritage, scenic
+            landscapes, and light adventure into one unforgettable journey.
+            </p>
+
+            <p>
+            From the peaceful valleys of Hunza to the adventurous trails of Fairy
+            Meadows and the majestic beauty of Skardu, every destination offers
+            something unique.
+            </p>
+
+            <!-- JOURNEY -->
+            <h3>The Journey</h3>
+
+            <p>
+            The tour begins with a flight to Gilgit followed by a scenic drive to
+            Hunza. After exploring the region and visiting Khunjerab Pass, the
+            journey continues towards Fairy Meadows via Raikot Bridge.
+            </p>
+
+            <p>
+            After experiencing the beauty of Nanga Parbat, the tour proceeds to
+            Skardu, where travelers explore lakes, deserts, and cultural landmarks.
+            </p>
+
+            <!-- EXPERIENCE -->
+            <h3>Activities & Experience</h3>
+
+            <p>
+            Enjoy sightseeing, cultural visits, jeep adventures, hiking to Fairy
+            Meadows, photography, and relaxing in nature.
+            </p>
+
+            <p>
+            The Fairy Meadows hike and jeep ride provide an exciting adventure,
+            making this tour perfect for both nature lovers and thrill seekers.
+            </p>
+
+            <!-- ITINERARY -->
+            <h3>Detailed Itinerary (7 Days)</h3>
+
+            <ul class="trek-list">
+
+            <li><strong>Day 1:</strong> Flight to Gilgit → Drive to Hunza → Visit Baltit & Altit Fort → Sunset at Duikar → Night stay in Hunza</li>
+
+            <li><strong>Day 2:</strong> Visit Attabad Lake → Passu Cones → Khunjerab Pass → Return via Sost → Night stay in Hunza</li>
+
+            <li><strong>Day 3:</strong> Drive to Raikot → Jeep ride to Tatu → Hike to Fairy Meadows → Night stay at huts</li>
+
+            <li><strong>Day 4:</strong> Sunrise at Fairy Meadows → Return to Raikot → Drive to Skardu → Night stay in Skardu</li>
+
+            <li><strong>Day 5:</strong> Visit Deosai Plains → Sadpara Lake → Optional Kharpocho Fort hike → Night stay in Skardu</li>
+
+            <li><strong>Day 6:</strong> Visit Shangrila Resort → Upper Kachura Lake → Cold Desert → Shigar Fort → Night stay in Skardu</li>
+
+            <li><strong>Day 7:</strong> Drop at Skardu Airport → Flight to Islamabad</li>
+
+            </ul>
+
+            <!-- WHY CHOOSE -->
+            <h3>Why Choose This Tour?</h3>
+
+            <ul class="trek-list">
+            <li>Three iconic destinations in one tour</li>
+            <li>Perfect mix of adventure and relaxation</li>
+            <li>Fairy Meadows experience with Nanga Parbat views</li>
+            <li>Professional planning and guided travel</li>
+            <li>Ideal for couples, groups, and explorers</li>
+            </ul>
+
+            <!-- FINAL NOTE -->
+            <h3>Final Note</h3>
+
+            <p>
+            This tour offers a complete northern experience—from high mountains
+            and cultural heritage to adventurous landscapes. It is an ideal journey
+            for those who want to explore Pakistan’s most famous destinations in
+            just one week.
+            </p>
+
+            <!-- BUTTON -->
+            <div class="trek-btn">
+            <a class="btn_primary" onclick="openWhatsApp()">Book Now</a>
             </div>
 
         </div>
-    </div>
+    </section>
 
     <footer class="site-footer">
         <div class="footer-overlay">
@@ -168,7 +265,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

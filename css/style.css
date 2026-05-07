@@ -421,3 +421,18 @@ section{padding:60px 0;}
 @media (max-width:600px){.departure-table{min-width:100%;}
 .departure-table th,.departure-table td{padding:10px;font-size:0.9rem;}
 }
+
+
+/* TABS */
+.tabs{display:flex;margin-bottom:30px;border:3px solid #f59900;}
+.tab-btn.active{background:#f59900;color:#fff;}
+.tab-btn{flex:1;padding:15px;border:none;cursor:pointer;font-weight:600;background:transparent;color:#fff;transition:0.3s;}
+/* CONTENT */
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+/* DAY STYLE */
+.day{margin-bottom:20px;}
+.day h3{color:#f5a623;}
+/* MOBILE */
+@media (max-width:768px){.tab-btn{font-size:14px;padding:12px;}
+}

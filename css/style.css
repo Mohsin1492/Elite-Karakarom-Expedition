@@ -180,8 +180,6 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* . */
 /* . */
 /* . */
-/* . */
-/* . */
 
 /* ===== HEADER ===== */
 .header{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.45);backdrop-filter:blur(10px);z-index:1000;}
@@ -189,8 +187,8 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .logo img{height:100px;}
 /* NAV */
 .nav-links{display:flex;gap:25px;list-style:none;padding:10px 30px;border:1px solid #fff;border-radius:30px;}
-.nav-links a{color:#fff;font-weight:500;text-decoration:none;}
-.nav-links a.active{color:#f59900;}
+.nav-links li a{color:#fff;font-weight:500;text-decoration:none;}
+.nav-links li a.active{color:#f59900;}
 
 /* MOBILE MENU */
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;}
@@ -261,6 +259,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 
 .tre-section{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/trek.webp") center/cover no-repeat;}
 .abt_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/abt_banner.webp") center/cover no-repeat;}
+.hb_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/hotel_3.webp") center/cover no-repeat;}
 .cntct_banner{padding:50px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../assets/images/cntct_banner.webp") center/cover no-repeat;}
 .tre-box{max-width:1100px;margin:auto;border:2px solid #ffb703;border-radius:26px;padding:60px 30px;text-align:center;}
 .tre-box h2{font-size:4rem;}
@@ -435,4 +434,71 @@ section{padding:60px 0;}
 .day h3{color:#f5a623;}
 /* MOBILE */
 @media (max-width:768px){.tab-btn{font-size:14px;padding:12px;}
+}
+
+
+
+/* Hotel Booking Page */
+.ekk-hotel-details-section{width:100%;padding:100px 7%;background:#141414;color:#ffffff;}
+.ekk-hotel-details-wrapper{display:flex;align-items:center;justify-content:space-between;gap:70px;}
+.ekk-hotel-details-content{flex:1;}
+.ekk-hotel-subtitle{display:inline-block;color:#d89b12;letter-spacing:4px;font-size:12px;margin-bottom:20px;}
+.ekk-hotel-main-heading{font-size:52px;line-height:1.2;margin-bottom:25px;font-weight:700;}
+.ekk-hotel-main-heading span{color:#d89b12;}
+.ekk-hotel-description{color:#d0d0d0;line-height:1.9;font-size:15px;max-width:650px;margin-bottom:40px;}
+/* FEATURES */
+.ekk-hotel-features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:45px;}
+.ekk-hotel-feature-card{display:flex;align-items:flex-start;gap:14px;padding:20px;border:1px solid rgba(216,155,18,0.3);border-radius:18px;background:#1b1b1b;transition:0.3s ease;}
+.ekk-hotel-feature-card:hover{transform:translateY(-4px);border-color:#d89b12;}
+.ekk-hotel-feature-icon{min-width:40px;height:40px;border-radius:50%;background:#d89b12;color:#141414;display:flex;align-items:center;justify-content:center;font-weight:bold;}
+.ekk-hotel-feature-card h4{margin-bottom:6px;font-size:18px;}
+.ekk-hotel-feature-card p{color:#c9c9c9;font-size:14px;line-height:1.6;}
+/* INFO BOX */
+.ekk-hotel-info-box{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:40px;}
+.ekk-hotel-info-item{padding:18px 24px;border:1px solid rgba(255,255,255,0.12);border-radius:14px;background:#1a1a1a;}
+.ekk-hotel-info-item h5{color:#d89b12;margin-bottom:8px;font-size:14px;}
+.ekk-hotel-info-item p{font-size:15px;color:#f2f2f2;}
+/* BUTTON */
+.ekk-hotel-booking-button{display:inline-flex;align-items:center;justify-content:center;padding:15px 38px;background:#d89b12;color:#141414;border-radius:10px;text-decoration:none;font-weight:600;transition:0.3s ease;}
+.ekk-hotel-booking-button:hover{transform:translateY(-3px);}
+/* IMAGE */
+.ekk-hotel-image-side{flex:1;}
+.ekk-hotel-image-side img{width:100%;border-radius:28px;border:2px solid rgba(255,255,255,0.2);object-fit:cover;min-height:650px;}
+/* ========================= GALLERY SECTION========================= */
+.ekk-hotel-gallery-section{width:100%;background:#141414;padding:20px 7% 120px;overflow:hidden;}
+.ekk-hotel-gallery-header{text-align:center;margin-bottom:60px;}
+.ekk-hotel-gallery-header span{color:#d89b12;font-size:12px;letter-spacing:4px;}
+.ekk-hotel-gallery-header h2{margin-top:15px;font-size:42px;}
+/* SLIDER */
+.ekk-hotel-gallery-slider{position:relative;}
+.ekk-gallery-track-container{overflow:hidden;}
+.ekk-gallery-track{display:flex;gap:25px;transition:transform 0.5s ease;}
+.ekk-gallery-slide{min-width:calc(33.333% - 17px);border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,0.15);}
+.ekk-gallery-slide img{width:100%;height:380px;object-fit:cover;display:block;}
+/* NAV BUTTONS */
+.ekk-gallery-nav-btn{position:absolute;top:50%;transform:translateY(-50%);width:55px;height:55px;border-radius:50%;border:none;background:#d89b12;color:#141414;font-size:24px;cursor:pointer;z-index:10;}
+.ekk-gallery-prev-btn{left:-25px;}
+.ekk-gallery-next-btn{right:-25px;}
+/* ========================= RESPONSIVE DESIGN========================= */
+@media (max-width:1200px){.ekk-hotel-main-heading{font-size:44px;}
+.ekk-gallery-slide{min-width:calc(50% - 13px);}
+}
+@media (max-width:992px){.ekk-hotel-details-wrapper{flex-direction:column;}
+.ekk-hotel-image-side img{min-height:500px;}
+.ekk-hotel-main-heading{font-size:40px;}
+}
+@media (max-width:768px){.ekk-hotel-details-section,.ekk-hotel-gallery-section{padding-left:5%;padding-right:5%;}
+.ekk-hotel-main-heading{font-size:34px;}
+.ekk-hotel-features-grid{grid-template-columns:1fr;}
+.ekk-gallery-slide{min-width:100%;}
+.ekk-gallery-slide img{height:300px;}
+.ekk-gallery-nav-btn{width:48px;height:48px;font-size:20px;}
+.ekk-gallery-prev-btn{left:5px;}
+.ekk-gallery-next-btn{right:5px;}
+}
+@media (max-width:480px){.ekk-hotel-main-heading{font-size:28px;}
+.ekk-hotel-description{font-size:14px;}
+.ekk-hotel-info-box{flex-direction:column;}
+.ekk-hotel-image-side img{min-height:350px;}
+.ekk-hotel-gallery-header h2{font-size:30px;}
 }

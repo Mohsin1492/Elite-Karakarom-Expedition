@@ -1,13 +1,11 @@
 // ===============================
-// ✅ GLOBAL SCRIPT (ALL PAGES SAFE)
+// GLOBAL SCRIPT (ALL PAGES SAFE)
 // ===============================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("JS Loaded");
-
     // ===============================
-    // 📱 MOBILE MENU TOGGLE
+    // MOBILE MENU TOGGLE
     // ===============================
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.querySelector(".nav-links");
@@ -22,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ===============================
-    // 📌 TABS (DETAILS / ITINERARY)
+    // TABS (DETAILS / ITINERARY)
     // ===============================
     const buttons = document.querySelectorAll(".tab-btn");
     const contents = document.querySelectorAll(".tab-content");
@@ -49,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ===============================
-    // 📩 CONTACT FORM
+    // CONTACT FORM
     // ===============================
     const contactForm = document.getElementById("contactForm");
 
@@ -105,10 +103,73 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ===============================
-// 💬 WHATSAPP BUTTON (GLOBAL)
+// WHATSAPP BUTTON (GLOBAL)
 // ===============================
 function openWhatsApp() {
     const phoneNumber = "923441186392";
     const url = `https://wa.me/${phoneNumber}`;
     window.open(url, "_blank");
+}
+
+
+
+// ===============================
+// Hotel Booking Gallery
+// ===============================
+const ekkGalleryTrack = document.querySelector(".ekk-gallery-track");
+const ekkGallerySlides = document.querySelectorAll(".ekk-gallery-slide");
+const ekkPrevBtn = document.querySelector(".ekk-gallery-prev-btn");
+const ekkNextBtn = document.querySelector(".ekk-gallery-next-btn");
+
+if (
+  ekkGalleryTrack &&
+  ekkGallerySlides.length > 0 &&
+  ekkPrevBtn &&
+  ekkNextBtn
+) {
+
+  let ekkCurrentIndex = 0;
+
+  function ekkUpdateSlider() {
+
+    let ekkSlideWidth = ekkGallerySlides[0].offsetWidth + 25;
+
+    ekkGalleryTrack.style.transform =
+      `translateX(-${ekkCurrentIndex * ekkSlideWidth}px)`;
+  }
+
+  ekkNextBtn.addEventListener("click", () => {
+
+    if (window.innerWidth <= 768) {
+
+      if (ekkCurrentIndex < ekkGallerySlides.length - 1) {
+        ekkCurrentIndex++;
+      }
+
+    } else if (window.innerWidth <= 1200) {
+
+      if (ekkCurrentIndex < ekkGallerySlides.length - 2) {
+        ekkCurrentIndex++;
+      }
+
+    } else {
+
+      if (ekkCurrentIndex < ekkGallerySlides.length - 3) {
+        ekkCurrentIndex++;
+      }
+    }
+
+    ekkUpdateSlider();
+  });
+
+  ekkPrevBtn.addEventListener("click", () => {
+
+    if (ekkCurrentIndex > 0) {
+      ekkCurrentIndex--;
+    }
+
+    ekkUpdateSlider();
+  });
+
+  window.addEventListener("resize", ekkUpdateSlider);
 }
